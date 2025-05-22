@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tag = true;
+      console.log(tag);
+      console.log(typeof tag);
+      // 布尔值只有两个值 true 和 false
+      // 布尔值可以由其他值转换而来
+      // 0 NaN null undefined '' 转换为 false
+      // 其他值转换为 true
+      console.log(Boolean(0));
+      console.log(Boolean(NaN));
+      console.log(Boolean(null));
+
+      //undefined 转
+      console.log(undefined + 1); // NaN
+
+      //typeof 运算符
+      //typeof 运算符返回一个字符串，表示未经计算的操作数的类型
+      let age = 18;
+      console.log(typeof age); // number
+      console.log(typeof "hello"); // string
+      console.log(typeof true); // boolean
+      console.log(typeof undefined); // undefined
+      console.log(typeof object); // object
+    </script>
+  </body>
+</html>

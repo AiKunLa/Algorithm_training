@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let add = 0;
+      let oNum = 0;
+      let num = 1;
+      while (num <= 100) {
+        if (num % 2 === 0) oNum += num;
+        add += num;
+        document.write(num + "&nbsp;"); //1-100
+        num++;
+      }
+      doucment.write("<hr>");
+      console.log("1~100的和为" + add); //5050
+      console.log("1~100的偶数和为" + oNum); //2550
+    </script>
+  </body>
+</html>

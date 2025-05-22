@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // prompt() 弹出一个输入框，让用户输入数据，返回值是用户输入的数据
+      // 注意：prompt() 方法的返回值是字符串类型，即使用户输入的是数字，也会被转换成字符串类型
+      //   let num = prompt("请输入一个数字");
+      //   console.log(typeof num); // string
+
+      //隐式转换：将字符串转换成数字
+      // 加号 + 将数字转换成字符串 只有+号可以将数字转换成字符串，其他的符号都不能将数字转换成字符串
+      console.log(1 + 1); // 2
+      console.log(1 + "1"); // 11
+      let type1 = +"123";
+      console.log(typeof type1); // number
+      // 减号 - 将字符串转换成数字
+      console.log(1 - 1); // 0
+      console.log(1 - "1"); // 0
+
+      //显示转换：将数字转换成字符串
+      //转为数字类型
+      let str = Number("123");
+      console.log(typeof str); // number
+
+      // 转为整数类型 只保留整数部分，小数部分舍弃
+      parseInt(1.2); // 1
+      parseInt("3.2"); // 3
+      parseInt("12sd"); // 12
+      parseInt("sd12"); // NaN
+
+      // 转为浮点数类型 保留小数部分
+      parseFloat(1.2); // 1.2
+      parseFloat("3.2"); // 3.2
+      parseFloat("12.25sd"); // 12.25
+      parseFloat("sd12"); // NaN
+
+      //转为字符串类型
+      let type3 = String(123);
+      console.log(typeof type3); // string
+      //转为布尔类型
+      let type4 = Boolean(123);
+      console.log(typeof type4); // boolean
+      //转为undefined类型
+      //   let type5 = undefined(123);
+      //   console.log(typeof type5); // undefined
+      //转为null类型
+      //   let type6 = null(123);
+      //   console.log(typeof type6); // object
+
+      let num1 = +prompt("请输入一个数字");
+      let num2 = +prompt("请输入一个数字");
+      document.write(`${num1}+${num2}=${num1 + num2}`);
+    </script>
+  </body>
+</html>

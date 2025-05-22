@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>函数提升</title>
+  </head>
+  <body>
+    <script>
+      // 输出结果：undefinedword
+      console.log(str + "word");
+      var str = "hello";
+
+      // 无效输出
+      console.log(str2 + "word");
+      let str2 = "hello";
+
+      foo();
+      function foo() {
+        console.log("声明之前被调用");
+      }
+
+      foo();
+
+      bar();
+      var bat = function () {
+        console.log("函数表达式无法函数提升");
+      };
+    </script>
+  </body>
+</html>

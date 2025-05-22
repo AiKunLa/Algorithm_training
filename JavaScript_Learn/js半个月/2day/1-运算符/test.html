@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //加号 等号运算符  += -= *= /= %=
+
+      //一元运算符  ++ -- 前置后置
+      let q = 1;
+      console.log(++q); //先加后用 2
+      console.log(q++); //先用后加 2
+      console.log(q); //3
+      //比较运算符  > < >= <= == === != !==
+      // === 全等于 类型和值都要相等
+      // == 等于 只要值相等就可以
+      q = 1;
+      if (q === "1") console.log("q等于1"); //false
+      if (q === 1) console.log("q等于1"); //true
+
+      if (q == "1") console.log("q等于1"); //true
+      // !== 不全等于 类型和值都不相等
+      //!= 不等于 只要值不相等就可以
+      if (q !== "1") console.log("q不等于1"); //true
+      if (q !== 1) console.log("q不等于1"); //false
+
+      // 字符串比较
+      // ASCII码表 0-9 A-Z a-z 空格 换行 制表符 回车 其他
+      // 字符串比较的是第一个字符的ASCII码值
+      // 如果第一个字符的ASCII码值相等，就比较第二个字符的ASCII码值
+      console.log("a" > "b"); //false
+      console.log("a" > "A"); //true
+      console.log("a" > "A" + 1); //true
+      console.log("a" > "A" + 2); //false
+      console.log("aa" < "aac"); //true
+      console.log("aa" < "aac" + 1); //true
+      console.log("aa" < "aac" + 2); //true
+      console.log("aa" < "aac" + 3); //true
+
+      //逻辑运算符 与   一假则假
+      if (q > 1 && q < 10) {
+        console.log("q在1和10之间"); //false
+      }
+      //或 一真则真
+      if (q < 1 || q > 10) {
+        console.log("q不在1和10之间"); //true
+      }
+      // 非 取反
+      if (!false) {
+        console.log("false"); //true
+      }
+
+      // 运算符的优先级
+      // 三元运算符 条件 ? 表达式1 : 表达式2
+      let a = q > 1 ? 1 : 2; //1
+    </script>
+  </body>
+</html>
